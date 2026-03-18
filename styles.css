@@ -1,0 +1,158 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, -apple-system,
+    sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.topbar {
+  padding: 20px 16px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.topbar p {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+.app-shell {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 16px 24px;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-label {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+#search-input {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 10px 12px;
+}
+
+.list-meta {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.content-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.content-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.content-item a {
+  color: var(--text);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.content-item a:hover {
+  color: var(--primary);
+}
+
+.content-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.meta {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.back-button {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.detail-article h2 {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.detail-links {
+  margin: 8px 0;
+}
+
+.detail-links a {
+  color: var(--primary);
+}
+
+.summary {
+  background: #eff6ff;
+  border-left: 4px solid var(--primary);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  font-size: 13px;
+}
+
+.empty-state {
+  margin-top: 12px;
+  color: var(--muted);
+}
