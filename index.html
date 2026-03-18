@@ -1,11 +1,42 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Codex Test</title>
-</head>
-<body>
-  <h1>Hello Codex</h1>
-  <p>This is my first Codex test project.</p>
-</body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>内容采集与提炼器 - 前端展示模块</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>内容采集与提炼器</h1>
+      <p>已采集与提炼内容展示（MVP）</p>
+    </header>
+
+    <main id="app" class="app-shell" aria-live="polite"></main>
+
+    <template id="list-view-template">
+      <section class="panel">
+        <div class="search-bar">
+          <label for="search-input" class="search-label">搜索内容</label>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="按标题、来源或标签搜索"
+            autocomplete="off"
+          />
+        </div>
+        <div id="list-meta" class="list-meta"></div>
+        <ul id="content-list" class="content-list"></ul>
+      </section>
+    </template>
+
+    <template id="detail-view-template">
+      <section class="panel detail-panel">
+        <button id="back-button" class="back-button" type="button">← 返回列表</button>
+        <article id="detail-article" class="detail-article"></article>
+      </section>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
 </html>
